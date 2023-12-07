@@ -1,0 +1,169 @@
+* {
+	font-family: Inter, sans-serif;
+	line-height: 1.75;
+	margin: 0.25em 0;
+}
+
+html, body {
+	margin: 0 auto;
+	padding: 0.75em;
+	max-width: 80ch;
+	font-size: 0.9em;
+	background: #FFF;
+}
+
+header > a {
+	img {
+		width: 1.6em;
+		padding-right: 0.4em;
+	&:hover {
+		opacity: 0.5;
+	}
+	}
+}
+
+a {
+	&:hover {
+		opacity: 0.5;
+	}
+	color: #07F;
+}
+
+ul.links, header {
+	a {
+		text-decoration: none;
+		color: inherit;
+		&:hover {
+			text-decoration: underline;
+			opacity: unset;
+		}
+	}
+}
+
+ul.links {
+	padding-left: 0;
+	li {
+		list-style: none;
+
+	}
+	a {
+		font-weight: 700;
+		&.out {
+			font-weight: unset;
+		}
+	}
+}
+
+span.date {
+	padding-left: 0.5em;
+	opacity: 0.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: serif;
+	font-weight: 400;
+	padding-top: 1rem;
+	border-bottom: 1px solid #0002;
+}
+
+h1 {
+	padding-top: unset;
+}
+
+img {
+	max-width: 100%;
+}
+
+div.home {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 3em;
+	div.content {
+		flex: 2 40ch;
+	}
+	div {
+		display: flex;
+		flex-direction: column;
+		section {
+			margin: 1em 0;
+		}
+	}
+}
+
+p {
+	margin: 1em 0;
+}
+
+hr {
+	border: none;
+	border-bottom: 1px dashed #0008;
+}
+
+table { 
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 0.25rem 0.5rem;
+	text-align: left;
+}
+
+td {
+	vertical-align: top;
+	border: 1px solid #0004;
+}
+
+th {
+	background: #000;
+	color: #FFF;
+	vertical-align: bottom;
+	border: 1px solid #FFF4;
+}
+
+tr:nth-child(even) {background: #FFF5;}
+
+blockquote {
+	border: 1px solid #0008;
+	margin: 0;
+	padding: 0.5rem 1rem;
+	font-style: italic;
+	background: #FFF5;
+}
+
+code, pre {
+	font-family: monospace;
+	background: #000;
+	color: #FFF;
+}
+
+
+@media(prefers-color-scheme: dark) {
+	html, body {
+		background: #111;
+		color: #FFF;
+	}
+
+	a {
+		color: #F42;
+	}
+
+	h1,h2,h3,h4,h5,h6 {	border-color: #FFF2;}
+
+	hr { border-color: #FFF8; }
+
+	blockquote {
+		border-color: #FFF8;
+		background: #0005;
+	}
+
+	td { border-color: #0004; }
+
+	th {
+		border-color: #FFF4;
+		color: #111;
+		background: #FFF;
+	}
+
+	tr:nth-child(even) { background: #0005;}
+}

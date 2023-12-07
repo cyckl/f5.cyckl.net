@@ -1,0 +1,15 @@
+f5.maatt.fr {
+    import secure_headers
+    import handle_404
+    root * /home/git/f5.maatt.fr
+    encode zstd gzip
+    file_server {
+        precompressed br
+    }
+}
+
+f5.cyckl.net {
+    import secure_headers
+    encode zstd gzip
+    redir https://f5.maatt.fr{uri}
+}
