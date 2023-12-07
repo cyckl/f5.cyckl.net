@@ -1,6 +1,6 @@
 f5.maatt.fr {
-    import secure_headers
     import handle_404
+    import secure_headers
     root * /home/git/f5.maatt.fr
     encode zstd gzip
     file_server {
