@@ -17,3 +17,9 @@ The **Falcon 5** is a school news show that runs every Thursday during your Advi
 See also: [*Production*](/prod)
 
 The show is tied together by a live switcher system, which is then broadcast to YouTube during Advisory. There are two major people involved in the technical production of the show—the *Technical Director* (controls the video switcher), and the *Audio Engineer* (controls mixing board).
+
+## Quick links
+
+Some useful resources are linked below.
+
+* Teleprompter service: [AutoCue](https://cue.f5.maatt.fr)
