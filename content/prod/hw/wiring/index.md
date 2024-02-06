@@ -2,8 +2,6 @@
 title= "System wiring"
 +++
 
-# System wiring
-
 Overall, the production system is made up of four different categories of wiring—video, audio, the control plane, and power.
 
 ## Video

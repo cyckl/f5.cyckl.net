@@ -2,8 +2,6 @@
 title= "Production"
 +++
 
-# Production
-
 Honestly, this is the cooler part of the show.
 
 ## Hardware

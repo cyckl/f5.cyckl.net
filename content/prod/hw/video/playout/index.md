@@ -2,8 +2,6 @@
 title= "Media playout"
 +++
 
-# Media playout
-
 There are two playout machines, both being BMD [HyperDeck Studio 4K Pros](https://www.blackmagicdesign.com/products/hyperdeckstudio/techspecs/W-HYD-14). Yes—they are 4K capable.
 
 The playout machines are essentially dedicated devices for media playback and recording. They're fairly capable, with a decent set of I/O that allows for configuring them as needed for any show.

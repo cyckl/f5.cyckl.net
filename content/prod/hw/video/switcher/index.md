@@ -2,8 +2,6 @@
 title= "Switcher"
 +++
 
-# Switcher
-
 The currently installed switcher is the BMD [ATEM Constellation 8K](https://www.blackmagicdesign.com/products/atemconstellation8k/techspecs/W-APS-12). These were used for IMAG (image magnification) for Billie Eilish's tour in 2022, and the ATEM line is a popular choice for setups in churches and other budget-conscious environments.
 
 This is the heart of the production. Video sources, audio devices, control data, and more all converge here. Equipped with 40 SDI inputs, 24 customizable SDI outputs, and 4 multiviewer outputs, there's quite a lot you can do with the switcher, provided that you know how to take advantage of it.

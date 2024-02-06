@@ -2,8 +2,6 @@
 title= "Hardware"
 +++
 
-# Hardware
-
 ## Introduction
 
 If you're in charge of this (Technical Director) then you're in for quite a wild ride. Having implemented the system, I can say that in addition to traditional AV knowledge, it helps SIGNIFICANTLY to have a background in computer networking and some basic familiarity with the nitty gritty of broadcast systems. (standards, real-world implementations, etc)

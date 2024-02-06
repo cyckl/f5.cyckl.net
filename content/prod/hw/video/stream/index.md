@@ -2,8 +2,6 @@
 title= "Stream encoder"
 +++
 
-# Stream encoder
-
 ## Setup and management
 
 ## Quirks

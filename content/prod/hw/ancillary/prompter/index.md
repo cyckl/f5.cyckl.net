@@ -2,8 +2,6 @@
 title= "Teleprompter"
 +++
 
-# Teleprompter
-
 The teleprompter system consists of three [19" Magicue Studio](#) prompters. Each prompter unit itself is quite simple, being made up of a computer monitor, reflective glass surface, a camera hood, and mounting hardware.
 
 Set up is easy, with the system mounted in between a camera and its stand. Video signal can be sent to the prompter using HDMI.
