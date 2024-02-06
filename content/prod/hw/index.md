@@ -14,7 +14,7 @@ If you aren't familiar with computers, rope a computer nerd into the program to 
 
 ## Video system
 
-To start, the production system is composed of the following elements:
+To start, the video system is composed of the following elements:
 
 * [Live switcher](/prod/hw/video/switcher)
 	* Switcher control panel
@@ -23,11 +23,15 @@ To start, the production system is composed of the following elements:
 * [Stream encoder](/prod/hw/video/stream)
 * [SDI-to-HDMI converters](/prod/hw/video#Converters)
 
-Most of these systems are connected using two types of connection. SDI connections between devices handle the video (and sometimes audio feeds). The control layer is implemented out-of-band via Ethernet. The systems communicate control data with each other over the school's network.
+Most of these systems are connected using two types of connection. The video layer is wired up using SDI and the control layer is implemented out-of-band via Ethernet.
 
 ### Audio system
 
-[External audio](/prod/hw/audio) is also patched into the switcher.
+* [Mixer](/prod/hw/audio/mixer)
+* [Microphones](/prod/hw/audio/mic)
+* [Background music](/prod/hw/audio/music)
+
+Audio routing is accomplished through a mixture of TRS and XLR from input to output. Generally simple.
 
 ## Ancilliary systems
 
@@ -36,8 +40,7 @@ In addition, to complement the main system, a few other ancilliaries are include
 * [Intercom](/prod/hw/ancillary/intercom)
 * [Tally](/prod/hw/ancillary/tally)
 * [Network-attached storage (NAS)](/prod/hw/ancillary/nas)
-* A managed [ethernet switch](/prod/hw/ancillary/net)
-* Power distribution
+* Two [ethernet switches](/prod/hw/ancillary/net)
 
 ## External systems
 
@@ -47,3 +50,9 @@ For things not located directly in the production rack:
 * [Studio lighting](/prod/hw/ancillary/light)
 * Tally lights
 * Intercom belt-packs
+
+## Everything else
+
+Everything has to be wired up somehow, but it's enough information to necessitate an independent page: [Wiring](/prod/hw/wiring)
+
+Information on the physical rack hardware itself is accessible here: [Rack](/prod/hw/rack)
