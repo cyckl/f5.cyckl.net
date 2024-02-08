@@ -12,6 +12,31 @@
 <body>
 	<header>
 		<a href="/">Home</a>
+    <span class="secondary">
+      {% if page %}
+        {% set secs = page.ancestors %}
+        {% set l = secs | length %}
+        {% if l>1 %}
+      navigation : 
+          {% set secs = secs | slice(start=1) %}
+          {% for s in secs %}
+            {% set sec = get_section(path=s) %}
+      <a href="{{sec.permalink}}">{{sec.title | lower }}</a>{% if loop.last == false %} // {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% elif section %}
+        {% set secs = section.ancestors %}
+        {% set l = secs | length %}
+        {% if l>1 %}
+      navigation : 
+          {% set secs = secs | slice(start=1) %}
+          {% for s in secs %}
+            {% set sec = get_section(path=s) %}
+      <a href="{{sec.permalink}}">{{sec.title | lower }}</a>{% if loop.last == false %} // {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endif %}
+    </span>
 	</header>
 	<main>
 		{% block content %}{% endblock content %}
