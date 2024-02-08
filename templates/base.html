@@ -11,30 +11,30 @@
 </head>
 <body>
 	<header>
-		<a href="/">Home</a>
-    <span>
-      {% if page %}//
-        {% set secs = page.ancestors %}
-        {% set l = secs | length %}
-        {% if l>1 %}
-          {% set secs = secs | slice(start=1) %}
-          {% for s in secs %}
-            {% set sec = get_section(path=s) %}
-      <a href="{{sec.permalink}}">{{sec.title}}</a>{% if loop.last == false %} // {% endif %}
-          {% endfor %}
-        {% endif %}
-      {% elif section %}//
-        {% set secs = section.ancestors %}
-        {% set l = secs | length %}
-        {% if l>1 %}
-          {% set secs = secs | slice(start=1) %}
-          {% for s in secs %}
-            {% set sec = get_section(path=s) %}
-      <a href="{{sec.permalink}}">{{sec.title}}</a>{% if loop.last == false %} // {% endif %}
-          {% endfor %}
-        {% endif %}
-      {% endif %}
-    </span>
+		<span>
+			<a href="/">Home</a>
+			{% if page %}->
+				{% set secs = page.ancestors %}
+				{% set l = secs | length %}
+				{% if l>1 %}
+					{% set secs = secs | slice(start=1) %}
+					{% for s in secs %}
+						{% set sec = get_section(path=s) %}
+			<a href="{{sec.permalink}}">{{sec.title}}</a>{% if loop.last == false %} -> {% endif %}
+					{% endfor %}
+				{% endif %}
+			{% elif section %}->
+				{% set secs = section.ancestors %}
+				{% set l = secs | length %}
+				{% if l>1 %}
+					{% set secs = secs | slice(start=1) %}
+					{% for s in secs %}
+						{% set sec = get_section(path=s) %}
+			<a href="{{sec.permalink}}">{{sec.title}}</a>{% if loop.last == false %} -> {% endif %}
+					{% endfor %}
+				{% endif %}
+			{% endif %}
+		</span>
 	</header>
 	<main>
 		{% block content %}{% endblock content %}
