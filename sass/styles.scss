@@ -50,7 +50,7 @@ span.date {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: serif;
+	font-family: "CMU Serif", serif;
 	font-weight: 400;
 	padding-top: 1rem;
 	border-bottom: 1px solid #0002;
@@ -103,6 +103,23 @@ th {
 
 tr:nth-child(even) { background: #FFF5; }
 
+ul.toc {
+	background: #0001;
+	padding: 1rem;
+	border: #0002 1px solid;
+	list-style: none;
+	max-width: fit-content;
+
+	:first-child { margin-top: 0; }
+	:last-child { margin-bottom: 0; }
+
+	ul {
+		list-style: none;
+		padding-left: 1rem;
+		border-left: #0004 1px solid;
+	}
+}
+
 blockquote {
 	border: 1px solid #0008;
 	margin: 0;
@@ -144,4 +161,10 @@ code, pre {
 	}
 
 	tr:nth-child(even) { background: #0005; }
+
+	ul.toc {
+		background: #FFF1;
+		border-color: #FFF2;
+		ul { border-color: #FFF4 }
+	}
 }
