@@ -16,25 +16,20 @@ header > a {
 	img {
 		width: 1.6em;
 		padding-right: 0.4em;
-	&:hover {
-		opacity: 0.5;
-	}
+		&:hover { opacity: 0.5; }
 	}
 }
 
 a {
-	&:hover {
-		opacity: 0.5;
-	}
 	color: #07F;
+	&:hover { opacity: 0.5; }
 }
 
 ul.links, header {
 	a {
-		text-decoration: none;
 		color: inherit;
 		&:hover {
-			text-decoration: underline;
+			text-decoration: none;
 			opacity: unset;
 		}
 	}
@@ -42,15 +37,10 @@ ul.links, header {
 
 ul.links {
 	padding-left: 0;
-	li {
-		list-style: none;
-
-	}
+	li { list-style: none; }
 	a {
 		font-weight: 700;
-		&.out {
-			font-weight: unset;
-		}
+		&.out { font-weight: unset; }
 	}
 }
 
@@ -66,33 +56,23 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom: 1px solid #0002;
 }
 
-h1 {
-	padding-top: unset;
-}
+h1 { padding-top: unset; }
 
-img {
-	max-width: 100%;
-}
+img { max-width: 100%; }
 
 div.home {
 	display: flex;
 	flex-wrap: wrap;
 	column-gap: 3em;
-	div.content {
-		flex: 2 40ch;
-	}
+	div.content { flex: 2 40ch; }
 	div {
 		display: flex;
 		flex-direction: column;
-		section {
-			margin: 1em 0;
-		}
+		section { margin: 1em 0; }
 	}
 }
 
-p {
-	margin: 1em 0;
-}
+p { margin: 1em 0; }
 
 hr {
 	border: none;
@@ -121,7 +101,7 @@ th {
 	border: 1px solid #FFF4;
 }
 
-tr:nth-child(even) {background: #FFF5;}
+tr:nth-child(even) { background: #FFF5; }
 
 blockquote {
 	border: 1px solid #0008;
@@ -144,9 +124,7 @@ code, pre {
 		color: #FFF;
 	}
 
-	a {
-		color: #F42;
-	}
+	a { color: #F42; }
 
 	h1,h2,h3,h4,h5,h6 {	border-color: #FFF2;}
 
@@ -165,5 +143,5 @@ code, pre {
 		background: #FFF;
 	}
 
-	tr:nth-child(even) { background: #0005;}
+	tr:nth-child(even) { background: #0005; }
 }
