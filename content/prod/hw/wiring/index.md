@@ -1,6 +1,8 @@
 +++
 title= "System wiring"
-template= "page-toc.html"
+
+[extra]
+tocEnable= true
 +++
 
 Overall, the production system is made up of four different categories of wiring—video, audio, the control plane, and power.
