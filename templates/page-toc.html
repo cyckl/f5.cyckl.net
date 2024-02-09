@@ -1,8 +1,6 @@
 {% extends "page.html" %}
 
-{% block content %}
-
-<h1>{{ page.title }}</h1>
+{% block toc %}
 
 {% if page.toc %}
     <ul class="toc">
@@ -23,6 +21,4 @@
     </ul>
 {% endif %}
 
-{{ page.content | safe }}
-
-{% endblock content %}
+{% endblock toc %}
