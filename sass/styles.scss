@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; 
 	font-weight: 400;
 	padding-top: 1rem;
-	border-bottom: 1px solid #0002;
+	border-bottom: 1px solid #DDD;
 }
 
 h1 { padding-top: unset; }
@@ -76,7 +76,7 @@ p { margin: 1em 0; }
 
 hr {
 	border: none;
-	border-bottom: 1px dashed #0008;
+	border-bottom: 1px dashed #DDD;
 }
 
 table { 
@@ -91,22 +91,22 @@ th, td {
 
 td {
 	vertical-align: top;
-	border: 1px solid #0004;
+	border: 1px solid #DDD;
 }
 
 th {
 	background: #000;
 	color: #FFF;
 	vertical-align: bottom;
-	border: 1px solid #FFF4;
+	border: 1px solid #222;
 }
 
-tr:nth-child(even) { background: #FFF5; }
+tr:nth-child(even) { background: #EEE; }
 
 ul.toc {
-	background: #0001;
+	background: #EEE;
 	padding: 1rem;
-	border: #0002 1px solid;
+	border: #DDD 1px solid;
 	list-style: none;
 	max-width: fit-content;
 
@@ -116,7 +116,7 @@ ul.toc {
 	ul {
 		list-style: none;
 		padding-left: 1rem;
-		border-left: #0004 1px solid;
+		border-left: #DDD 1px solid;
 	}
 }
 
@@ -126,11 +126,11 @@ ul.directory {
 }
 
 blockquote {
-	border: 1px solid #0008;
+	border: 1px solid #DDD;
 	margin: 0;
 	padding: 0.5rem 1rem;
 	font-style: italic;
-	background: #FFF5;
+	background: #EEE;
 }
 
 code, pre {
@@ -142,34 +142,34 @@ code, pre {
 
 @media(prefers-color-scheme: dark) {
 	html, body {
-		background: #111;
+		background: #000;
 		color: #FFF;
 	}
 
 	a { color: #F42; }
 
-	h1,h2,h3,h4,h5,h6 {	border-color: #FFF2;}
+	h1,h2,h3,h4,h5,h6 {	border-color: #222;}
 
-	hr { border-color: #FFF8; }
+	hr { border-color: #222; }
 
 	blockquote {
-		border-color: #FFF8;
-		background: #0005;
+		border-color: #222;
+		background: #111;
 	}
 
-	td { border-color: #0004; }
+	td { border-color: #222; }
 
 	th {
-		border-color: #FFF4;
+		border-color: #DDD;
 		color: #111;
 		background: #FFF;
 	}
 
-	tr:nth-child(even) { background: #0005; }
+	tr:nth-child(even) { background: #111; }
 
 	ul.toc {
-		background: #FFF1;
-		border-color: #FFF2;
-		ul { border-color: #FFF4 }
+		background: #111;
+		border-color: #222;
+		ul { border-color: #222 }
 	}
 }
