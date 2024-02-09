@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{ section.title }}</h1>
+
+{{ section.content | safe }}
+
+<ul class="directory">
+{% for page in section.pages %}
+	<li><a href="{{ page.permalink }}">{{ page.title }}</a> {% if page.date %}<span class="link_date"> {{page.date}}</span>{% endif %}</li>
+{% endfor %}
+</ul>
+
+{% endblock content %}
