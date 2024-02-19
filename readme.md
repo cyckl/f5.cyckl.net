@@ -1,7 +1,1 @@
-# Wikii
-
-New wiki based on [Zola](https://www.getzola.org/). Much more opinionated.
-
-## Structure
-
-![layout of wiki structure](https://github.com/srfalcon5/wikii/blob/main/asset/wiki-structure.svg?raw=true)
+Code is no longer maintained on GitHub. You can view any changes at https://git.lmao.ch/falcon5/wiki
